@@ -49,7 +49,7 @@ exp.get('/weather' , (req, res)=>{
 })
 
 exp.get('/help/*', (req, res)=> res.render('404view', {title: '404', name: 'assaf',
-me: 'noa', messege: 'help article not found'}))
+me: 'noa', messege: 'Help article not found'}))
 
 exp.get('*', (req, res)=> res.render('404view', {title: '404', name: 'assaf',
 me: 'noa' , messege: '404 not found'}))
