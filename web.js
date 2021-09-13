@@ -4,6 +4,8 @@ const express = require('express')
 const hbs = require('hbs')
 const exp = express()
 
+const port = process.env.PORT || 3000
+
 const viewpath =(__dirname + '/templets/views')
 const viewpartials =(__dirname + '/templets/partials')
 
@@ -55,7 +57,7 @@ me: 'noa' , messege: '404 not found'}))
 
 
 
-exp.listen(3000,()=>console.log('hello'))
+exp.listen(port,()=>console.log('hello YOURE ON PORT' + port))
 
 
 
