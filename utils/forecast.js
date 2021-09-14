@@ -12,7 +12,7 @@ const forecast = ((co1, co2, callback)=>{
         callback('culdnt find the location',undefined)
     
         else
-        callback(undefined,'the temp is' + body.current.temperature + 'but its feel like ' + body.current.feelslike )    
+        callback(undefined, ' ' +body.current.weather_descriptions[0] + ' the temp is ' + body.current.temperature + ' but it feels like ' + body.current.feelslike )    
         
     })})
 module.exports = forecast;
